@@ -51,7 +51,7 @@ export default function Contact({ isDarkMode }) {
       });
   };
 
-  const budgets = ["< $1K", "$1K – $5K", "$5K – $20K", "$20K+", "Let's Discuss"];
+  const budgets = ["> ৳ 500", "৳ 500 – ৳ 2,000", "৳ 2,000 – ৳ 5,000", "৳ 5,000+", "Let's Discuss"];
 
   return (
     <section id="contact" className={`relative py-28 ${sectionBgClass} overflow-hidden`}>
