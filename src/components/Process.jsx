@@ -37,7 +37,7 @@ export default function Process({ isDarkMode }) {
   const ctaBgClass = isDarkMode ? "bg-white/[0.03] border-white/[0.08]" : "bg-slate-100 border-slate-200";
 
   return (
-    <section className={`relative py-28 ${sectionBgClass} overflow-hidden`}>
+    <section id="process" className={`relative py-28 ${sectionBgClass} overflow-hidden`}>
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-indigo-600/8 rounded-full blur-[120px]" />
       </div>

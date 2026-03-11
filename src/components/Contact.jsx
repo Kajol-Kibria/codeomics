@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+// ─── Google Apps Script ────────────────────────────────────────
+// Paste your deployed Google Apps Script web app URL below.
+// See google-apps-script.js in the project root for the script code & setup steps.
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwwpSaeixNHsANJTxftf6mrzriYMTfWSSjoMNmAcKxPieaofKDeRFQmBNReYiWwK1OhAQ/exec";
+
 export default function Contact({ isDarkMode }) {
   const sectionBgClass = isDarkMode ? "bg-[#0a0a0f]" : "bg-slate-50";
   const textClass = isDarkMode ? "text-white" : "text-slate-900";
@@ -17,14 +22,33 @@ export default function Contact({ isDarkMode }) {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    setError("");
+
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: form.name,
+        email: form.email,
+        budget: form.budget || "Not specified",
+        message: form.message,
+      }),
+    })
+      .then(() => {
+        setLoading(false);
+        setSubmitted(true);
+      })
+      .catch((err) => {
+        setLoading(false);
+        setError("Failed to send message. Please try again or email us directly.");
+        console.error("Form submission error:", err);
+      });
   };
 
   const budgets = ["< $1K", "$1K – $5K", "$5K – $20K", "$20K+", "Let's Discuss"];
@@ -184,11 +208,10 @@ export default function Contact({ isDarkMode }) {
                           type="button"
                           key={b}
                           onClick={() => setForm({ ...form, budget: b })}
-                          className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                            form.budget === b
-                              ? budgetActiveClass
-                              : `${budgetBgClass} ${isDarkMode ? "text-gray-400" : "text-slate-600"} border hover:border-indigo-500/40 hover:text-indigo-400`
-                          }`}
+                          className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${form.budget === b
+                            ? budgetActiveClass
+                            : `${budgetBgClass} ${isDarkMode ? "text-gray-400" : "text-slate-600"} border hover:border-indigo-500/40 hover:text-indigo-400`
+                            }`}
                         >
                           {b}
                         </button>
@@ -228,6 +251,12 @@ export default function Contact({ isDarkMode }) {
                       "Send Message →"
                     )}
                   </button>
+
+                  {error && (
+                    <p className="text-red-400 text-sm text-center font-medium">
+                      {error}
+                    </p>
+                  )}
 
                   <p className={`${subTextClass} text-xs text-center`}>
                     By submitting, you agree to our Privacy Policy. We never share your data.

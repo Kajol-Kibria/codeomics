@@ -89,7 +89,7 @@ export default function Services({ isDarkMode }) {
           {services.map((svc, i) => (
             <div
               key={i}
-              className={`group relative p-7 rounded-3xl ${cardBgClass} hover:border-indigo-500/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:${svc.glow} backdrop-blur-sm cursor-pointer`}
+              className={`group relative p-7 rounded-3xl ${cardBgClass} hover:border-indigo-500/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20 backdrop-blur-sm cursor-pointer`}
             >
               {/* Gradient accent on hover */}
               <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${svc.gradient} opacity-0 group-hover:opacity-[0.04] transition-opacity duration-500`} />

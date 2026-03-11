@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const words = ["Websites", "Web Apps", "Digital Products", "SaaS Platforms", "E-Commerce"];
+const words = ["Websites", "Web Apps", "Digital Products", "Portfolio", "E-Commerce"];
 
 export default function Hero({ isDarkMode }) {
   const [wordIndex, setWordIndex] = useState(0);

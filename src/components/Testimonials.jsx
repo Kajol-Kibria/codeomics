@@ -4,7 +4,7 @@ const testimonials = [
     role: "CEO, NovaPay",
     avatar: "SM",
     color: "from-indigo-500 to-violet-500",
-    text: "Codomics didn't just build our platform — they transformed our vision into a product that our users genuinely love. The attention to detail and the speed of delivery were exceptional.",
+    text: "Codeomics didn't just build our platform — they transformed our vision into a product that our users genuinely love. The attention to detail and the speed of delivery were exceptional.",
     stars: 5,
   },
   {
@@ -12,7 +12,7 @@ const testimonials = [
     role: "Founder, LuxeShop",
     avatar: "JT",
     color: "from-rose-500 to-pink-500",
-    text: "Working with Codomics was a game-changer for our e-commerce business. Conversions increased by 43% after launch. Absolutely phenomenal work and communication throughout.",
+    text: "Working with Codeomics was a game-changer for our e-commerce business. Conversions increased by 43% after launch. Absolutely phenomenal work and communication throughout.",
     stars: 5,
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     role: "CTO, TaskFlow Pro",
     avatar: "PS",
     color: "from-cyan-500 to-teal-500",
-    text: "From architecture to deployment, the Codomics team demonstrated mastery at every level. Clean code, outstanding design, and real-time features that impressed our entire engineering team.",
+    text: "From architecture to deployment, the Codeomics team demonstrated mastery at every level. Clean code, outstanding design, and real-time features that impressed our entire engineering team.",
     stars: 5,
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     role: "Marketing Director, Luminary",
     avatar: "ML",
     color: "from-amber-500 to-orange-500",
-    text: "Our new landing page scored 98 on Lighthouse and our bounce rate dropped by 60%. Codomics delivered exactly what we dreamed of — and more. Will absolutely work together again.",
+    text: "Our new landing page scored 98 on Lighthouse and our bounce rate dropped by 60%. Codeomics delivered exactly what we dreamed of — and more. Will absolutely work together again.",
     stars: 5,
   },
   {
@@ -36,7 +36,7 @@ const testimonials = [
     role: "COO, MedTrack AI",
     avatar: "AO",
     color: "from-green-500 to-emerald-500",
-    text: "The team at Codomics understood our complex healthcare requirements instantly and delivered a robust, secure, and beautiful platform. Highly recommended for any serious web project.",
+    text: "The team at Codeomics understood our complex healthcare requirements instantly and delivered a robust, secure, and beautiful platform. Highly recommended for any serious web project.",
     stars: 5,
   },
   {
@@ -44,7 +44,7 @@ const testimonials = [
     role: "Product Lead, GearUp",
     avatar: "RK",
     color: "from-purple-500 to-violet-500",
-    text: "Incredible creativity paired with solid technical depth. Codomics brought our gaming store to life with features we hadn't even imagined. They're a true product partner.",
+    text: "Incredible creativity paired with solid technical depth. Codeomics brought our gaming store to life with features we hadn't even imagined. They're a true product partner.",
     stars: 5,
   },
 ];
