@@ -46,8 +46,13 @@ export default function App() {
       {isLoading && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0a0a0f] transition-opacity duration-500">
           <div className="text-center w-full max-w-md px-8">
-            <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent mb-4">
-              Codeomics
+            <div className="flex flex-col items-center justify-center mb-4">
+              <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent leading-none">
+                Codeomics
+              </div>
+              <div className="text-xs md:text-sm font-medium tracking-widest uppercase mt-2 text-indigo-300">
+                by kibria
+              </div>
             </div>
             <div className="text-slate-400 text-sm md:text-base tracking-wider animate-pulse mb-8">
               Crafting Digital Excellence
@@ -66,13 +71,13 @@ export default function App() {
       <Portfolio isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Process isDarkMode={isDarkMode} />
-      <Testimonials isDarkMode={isDarkMode} />
+      {/* <Testimonials isDarkMode={isDarkMode} /> */}
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
 
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-indigo-500/25 ${showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}`}
+        className={`fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-indigo-500/25 cursor-pointer ${showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}`}
         aria-label="Go to top"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

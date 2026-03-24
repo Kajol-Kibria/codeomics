@@ -48,9 +48,14 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-lg shadow-indigo-500/40 group-hover:scale-110 transition-transform duration-300">
             <span className="text-white font-black text-sm">Co</span>
           </div>
-          <span className={`font-extrabold text-xl tracking-tight ${navTextClass}`}>
-            Codeo<span className="text-indigo-400">mics</span>
-          </span>
+          <div className="flex flex-col">
+            <span className={`font-extrabold text-xl tracking-tight leading-none ${navTextClass}`}>
+              Code<span className="text-indigo-400">omics</span>
+            </span>
+            <span className={`text-[0.65rem] font-medium tracking-wider uppercase mt-0.5 ${navSubTextClass}`}>
+              by kibria
+            </span>
+          </div>
         </div>
 
         {/* Desktop Links */}
@@ -59,7 +64,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
             <li key={link}>
               <button
                 onClick={() => handleNav(link)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 cursor-pointer ${
                   active === link
                     ? "text-white bg-indigo-600/30 shadow-inner shadow-indigo-500/20"
                     : `${navSubTextClass} ${hoverBgClass}`
@@ -76,7 +81,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 transition-all duration-300 group"
+            className="p-2 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 transition-all duration-300 group cursor-pointer"
             aria-label="Toggle theme"
           >
             {isDarkMode ? (
@@ -93,7 +98,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
           {/* CTA */}
           <button
             onClick={() => handleNav("Contact")}
-            className="px-5 py-2.5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-sm font-semibold rounded-xl shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5"
+            className="px-5 py-2.5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-sm font-semibold rounded-xl shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
           >
             Get a Quote
           </button>
@@ -101,7 +106,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
 
         {/* Hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className={`w-6 h-0.5 ${isDarkMode ? "bg-white" : "bg-slate-900"} transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
@@ -117,7 +122,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
             <button
               key={link}
               onClick={() => handleNav(link)}
-              className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
+              className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 cursor-pointer ${
                 active === link
                   ? "text-white bg-indigo-600/30"
                   : `${navSubTextClass} ${hoverBgClass}`
@@ -129,7 +134,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
           <div className="flex gap-2 mt-2">
             <button
               onClick={toggleTheme}
-              className="flex-1 px-4 py-3 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 transition-all duration-300 flex items-center justify-center gap-2"
+              className="flex-1 px-4 py-3 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
             >
               {isDarkMode ? (
                 <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -144,7 +149,7 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
             </button>
             <button
               onClick={() => handleNav("Contact")}
-              className="flex-1 px-5 py-3 bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-sm font-semibold rounded-xl"
+              className="flex-1 px-5 py-3 bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-sm font-semibold rounded-xl cursor-pointer"
             >
               Get a Quote
             </button>

@@ -2,10 +2,18 @@ const services = [
   {
     icon: "🌐",
     title: "Web Development",
-    desc: "Custom, scalable websites and web applications built with modern frameworks like Next.js, React, and TypeScript.",
-    tags: ["Next.js", "React", "TypeScript"],
+    desc: "Custom, scalable websites and web applications built with modern frameworks like Next.js, React, and TypeScript, including robust backend solutions.",
+    tags: ["Next.js", "React", "TypeScript", "Node.js", "Express"],
     gradient: "from-indigo-500 to-blue-500",
     glow: "shadow-indigo-500/20",
+  },
+  {
+    icon: "🗄️",
+    title: "Backend & Databases",
+    desc: "Scalable, secure backend APIs and data solutions, leveraging Node.js, Express, and cutting-edge databases for high-performance applications.",
+    tags: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Prisma"],
+    gradient: "from-green-600 to-emerald-500",
+    glow: "shadow-green-500/20",
   },
   {
     icon: "🎨",
@@ -18,19 +26,12 @@ const services = [
   {
     icon: "🛒",
     title: "E-Commerce Solutions",
-    desc: "Full-featured online stores with seamless checkout, inventory management, and payment integrations.",
-    tags: ["Shopify", "WooCommerce", "Stripe"],
+    desc: "Full-featured online stores with seamless checkout, inventory management, payment integrations, and backend order management.",
+    tags: ["Shopify", "WooCommerce", "Stripe", "PostgreSQL", "API"],
     gradient: "from-pink-500 to-rose-500",
     glow: "shadow-pink-500/20",
   },
-  {
-    icon: "☁️",
-    title: "Cloud & DevOps",
-    desc: "Reliable deployment pipelines, hosting infrastructure, and CI/CD workflows for zero-downtime delivery.",
-    tags: ["AWS", "Vercel", "Docker"],
-    gradient: "from-cyan-500 to-teal-500",
-    glow: "shadow-cyan-500/20",
-  },
+
   {
     icon: "📱",
     title: "Responsive Design",
@@ -42,9 +43,9 @@ const services = [
   {
     icon: "🔌",
     title: "API & Integrations",
-    desc: "Seamless third-party integrations, REST & GraphQL APIs, and backend services to power your digital ecosystem.",
-    tags: ["REST API", "GraphQL", "Node.js"],
-    gradient: "from-green-500 to-emerald-500",
+    desc: "Seamless third-party integrations, REST & GraphQL APIs, backend microservices, and database connections to power your digital ecosystem.",
+    tags: ["REST API", "GraphQL", "Node.js", "MySQL", "Prisma"],
+    gradient: "from-blue-600 to-green-400",
     glow: "shadow-green-500/20",
   },
 ];

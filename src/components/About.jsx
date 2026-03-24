@@ -111,11 +111,11 @@ export default function About({ isDarkMode }) {
 
             {/* Floating badge */}
             <div className="absolute -top-6 -right-6 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl px-4 py-3 shadow-2xl shadow-indigo-500/40">
-              <div className="text-white font-black text-2xl">5+</div>
+              <div className="text-white font-black text-2xl">2+</div>
               <div className="text-indigo-200 text-xs">Years</div>
             </div>
             <div className={`absolute -bottom-6 -left-6 ${statBgClass} border rounded-2xl px-4 py-3 shadow-2xl`}>
-              <div className={`font-black text-2xl ${textClass}`}>150+</div>
+              <div className={`font-black text-2xl ${textClass}`}>30+</div>
               <div className={`${subTextClass} text-xs`}>Projects Done</div>
             </div>
           </div>

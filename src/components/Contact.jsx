@@ -51,7 +51,7 @@ export default function Contact({ isDarkMode }) {
       });
   };
 
-  const budgets = ["> ৳ 500", "৳ 500 – ৳ 2,000", "৳ 2,000 – ৳ 5,000", "৳ 5,000+", "Let's Discuss"];
+  const budgets = ["৳ 5000 – ৳ 15,000", "৳ 15,000 – ৳ 30,000", "৳ 30,000+", "Let's Discuss"];
 
   return (
     <section id="contact" className={`relative py-28 ${sectionBgClass} overflow-hidden`}>
@@ -87,7 +87,7 @@ export default function Contact({ isDarkMode }) {
               {
                 icon: "📧",
                 label: "Email Us",
-                value: "hello@codeomics.com",
+                value: "kajolkibria95@gmail.com",
                 sub: "We reply within 24 hours",
                 gradient: "from-indigo-600/20 to-violet-600/20",
                 border: "border-indigo-500/20",
@@ -127,7 +127,7 @@ export default function Contact({ isDarkMode }) {
             ))}
 
             {/* Social links */}
-            <div>
+            {/* <div>
               <p className={`${subTextClass} text-xs font-semibold uppercase tracking-widest mb-3`}>
                 Follow Us
               </p>
@@ -140,13 +140,13 @@ export default function Contact({ isDarkMode }) {
                 ].map((s) => (
                   <button
                     key={s.label}
-                    className={`w-10 h-10 rounded-xl ${isDarkMode ? "bg-white/5 border-white/10 text-gray-400" : "bg-slate-100 border-slate-200 text-slate-600"} border hover:border-indigo-500/50 hover:bg-indigo-500/10 hover:text-white text-xs font-bold transition-all duration-300 hover:-translate-y-1`}
+                    className={`w-10 h-10 rounded-xl ${isDarkMode ? "bg-white/5 border-white/10 text-gray-400" : "bg-slate-100 border-slate-200 text-slate-600"} border hover:border-indigo-500/50 hover:bg-indigo-500/10 hover:text-white text-xs font-bold transition-all duration-300 hover:-translate-y-1 cursor-pointer`}
                   >
                     {s.icon}
                   </button>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right: Form */}
@@ -161,7 +161,7 @@ export default function Contact({ isDarkMode }) {
                   </p>
                   <button
                     onClick={() => { setSubmitted(false); setForm({ name: "", email: "", budget: "", message: "" }); }}
-                    className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-500 transition-colors"
+                    className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-500 transition-colors cursor-pointer"
                   >
                     Send Another Message
                   </button>
@@ -178,7 +178,7 @@ export default function Contact({ isDarkMode }) {
                         required
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
-                        placeholder="John Doe"
+                        placeholder="Your name"
                         className={`w-full px-4 py-3 rounded-xl ${inputBgClass} focus:outline-none focus:border-indigo-500/60 focus:bg-white/[0.07] transition-all duration-300 text-sm`}
                       />
                     </div>
@@ -191,7 +191,7 @@ export default function Contact({ isDarkMode }) {
                         required
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
-                        placeholder="john@company.com"
+                        placeholder="Your email address"
                         className={`w-full px-4 py-3 rounded-xl ${inputBgClass} focus:outline-none focus:border-indigo-500/60 focus:bg-white/[0.07] transition-all duration-300 text-sm`}
                       />
                     </div>
@@ -208,7 +208,7 @@ export default function Contact({ isDarkMode }) {
                           type="button"
                           key={b}
                           onClick={() => setForm({ ...form, budget: b })}
-                          className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${form.budget === b
+                          className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 cursor-pointer ${form.budget === b
                             ? budgetActiveClass
                             : `${budgetBgClass} ${isDarkMode ? "text-gray-400" : "text-slate-600"} border hover:border-indigo-500/40 hover:text-indigo-400`
                             }`}
@@ -238,7 +238,7 @@ export default function Contact({ isDarkMode }) {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold rounded-xl shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed text-base"
+                    className="w-full py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold rounded-xl shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed text-base cursor-pointer"
                   >
                     {loading ? (
                       <span className="flex items-center justify-center gap-2">

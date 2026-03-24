@@ -91,14 +91,14 @@ export default function Hero({ isDarkMode }) {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={() => handleScroll("portfolio")}
-            className="group px-8 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold rounded-2xl shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-1 text-base"
+            className="cursor-pointer group px-8 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold rounded-2xl shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-1 text-base"
           >
             View Our Work
             <span className="ml-2 inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
           </button>
           <button
             onClick={() => handleScroll("contact")}
-            className={`px-8 py-4 ${buttonSecondaryClass} font-semibold rounded-2xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 text-base`}
+            className={`cursor-pointer px-8 py-4 ${buttonSecondaryClass} font-semibold rounded-2xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 text-base`}
           >
             Start a Project
           </button>
@@ -107,9 +107,9 @@ export default function Hero({ isDarkMode }) {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
           {[
-            { value: "150+", label: "Projects Delivered" },
-            { value: "98%", label: "Client Satisfaction" },
-            { value: "5+", label: "Years Experience" },
+            { value: "50+", label: "Projects Delivered" },
+            { value: "100%", label: "Client Satisfaction" },
+            { value: "2+", label: "Years Experience" },
             { value: "40+", label: "Happy Clients" },
           ].map((stat) => (
             <div

@@ -63,7 +63,6 @@ export default function Process({ isDarkMode }) {
         {/* Steps */}
         <div className="relative">
           {/* Connector line (desktop) */}
-          <div className={`hidden lg:block absolute top-16 left-0 right-0 h-px ${isDarkMode ? "bg-gradient-to-r from-indigo-500/30 via-cyan-500/30 to-green-500/30" : "bg-gradient-to-r from-indigo-400/20 via-cyan-400/20 to-green-400/20"}`} />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, i) => (
@@ -100,7 +99,7 @@ export default function Process({ isDarkMode }) {
           </div>
           <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="shrink-0 px-8 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold rounded-2xl shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-1"
+            className="cursor-pointer shrink-0 px-8 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold rounded-2xl shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:-translate-y-1"
           >
             Book Free Consultation →
           </button>
