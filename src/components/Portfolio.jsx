@@ -8,7 +8,7 @@ const projects = [
     tech: ["React.js", "Tailwind CSS"],
     tag: "E-Commerce",
     link: "https://uniclub-kibria.vercel.app",
-    image: "/src/public/images/monochrome.png",
+    image: "/images/monochrome.png",
   },
   {
     title: "Kibria Shoes",
@@ -17,7 +17,7 @@ const projects = [
     tech: ["Next.js", "Stripe", "Vercel"],
     tag: "E-Commerce",
     link: "https://kibria-shoes.vercel.app",
-    image: "/src/public/images/kibria-shoes.png",
+    image: "/images/kibria-shoes.png",
   },
   {
     title: "Dark Mono Kibria",
@@ -26,7 +26,7 @@ const projects = [
     tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
     tag: "E-Commerce",
     link: "https://dark-mono-kibria.vercel.app",
-    image: "/src/public/images/dark-monochrome.png",
+    image: "/images/dark-monochrome.png",
   },
   {
     title: "Admin Kibria",
@@ -35,7 +35,7 @@ const projects = [
     tech: ["React", "Ant Design", "Chart.js"],
     tag: "Dashboard",
     link: "https://admin-kibria.vercel.app",
-    image: "/src/public/images/fashion-dashboard.png",
+    image: "/images/fashion-dashboard.png",
   },
   {
     title: "Evanik App",
@@ -44,7 +44,7 @@ const projects = [
     tech: ["Next.js", "TypeScript", "Prisma"],
     tag: "SaaS",
     link: "https://evanik.vercel.app",
-    image: "/src/public/images/evanik.png",
+    image: "/images/evanik.png",
   },
   {
     title: "Kibria Admin",
@@ -53,7 +53,7 @@ const projects = [
     tech: ["Next.js", "React", "Tailwind CSS"],
     tag: "Dashboard",
     link: "https://kibria-admin.vercel.app",
-    image: "/src/public/images/evanik-dashboard.png",
+    image: "/images/evanik-dashboard.png",
   },
 
   {
@@ -63,7 +63,7 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB"],
     tag: "Dashboard",
     link: "https://kibria-judiciary.vercel.app",
-    image: "/src/public/images/kibria-judiciary.png",
+    image: "/images/kibria-judiciary.png",
   },
 
   {
@@ -73,7 +73,7 @@ const projects = [
     tech: ["Next.js", "React", "Tailwind CSS"],
     tag: "Landing Page",
     link: "https://dental-kibria.vercel.app",
-    image: "/src/public/images/dental-kibria.png",
+    image: "/images/dental-kibria.png",
   },
   {
     title: "Furniture Kibria",
@@ -82,7 +82,7 @@ const projects = [
     tech: ["Next.js", "React", "Stripe"],
     tag: "E-Commerce",
     link: "https://furniture-kibria.vercel.app",
-    image: "/src/public/images/furniture.png",
+    image: "/images/furniture.png",
   },
   {
     title: "Noir Kibria",
@@ -91,7 +91,7 @@ const projects = [
     tech: ["Next.js", "Stripe", "Tailwind CSS"],
     tag: "E-Commerce",
     link: "https://noir-kibria.vercel.app",
-    image: "/src/public/images/nior-kibria.png",
+    image: "/images/nior-kibria.png",
   },
   {
     title: "Kibs Shoes",
@@ -100,7 +100,7 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "Stripe"],
     tag: "E-Commerce",
     link: "https://kibs-shoes.vercel.app",
-    image: "/src/public/images/kibs-shoes.png",
+    image: "/images/kibs-shoes.png",
   },
 
   {
@@ -110,7 +110,7 @@ const projects = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     tag: "Landing Page",
     link: "https://builder-kibria.vercel.app",
-    image: "/src/public/images/builder.png",
+    image: "/images/builder.png",
   },
   {
     title: "Mediomics",
@@ -119,7 +119,7 @@ const projects = [
     tech: ["Next.js", "TypeScript", "Chakra UI"],
     tag: "SaaS",
     link: "https://mediomics.vercel.app",
-    image: "/src/public/images/mediomics.png",
+    image: "/images/mediomics.png",
   },
 ];
 
