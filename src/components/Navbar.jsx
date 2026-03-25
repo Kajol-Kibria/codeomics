@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const navLinks = ["Home", "Services", "Portfolio", "About", "Testimonials", "Contact"];
+const navLinks = ["Home", "Services", "Portfolio", "About", "Contact"];
 
 export default function Navbar({ isDarkMode, toggleTheme }) {
   const [scrolled, setScrolled] = useState(false);

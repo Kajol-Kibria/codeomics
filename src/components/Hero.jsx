@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const words = ["Websites", "Web Apps", "Digital Products", "Portfolio", "E-Commerce"];
+const words = ["Websites", "Web Apps", "Digital Products", "Portfolio", "E-Commerce", "Landing page"];
 
 export default function Hero({ isDarkMode }) {
   const [wordIndex, setWordIndex] = useState(0);
@@ -34,7 +34,7 @@ export default function Hero({ isDarkMode }) {
   return (
     <section
       id="home"
-      className={`relative h-screen flex items-center justify-center overflow-hidden ${sectionBgClass}`}
+      className={`relative sm:h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0 ${sectionBgClass}`}
     >
       {/* Animated background blobs */}
       <div className="absolute inset-0 pointer-events-none">
@@ -105,7 +105,7 @@ export default function Hero({ isDarkMode }) {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div className="mt-20 mb-32 md:mb-0 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
           {[
             { value: "50+", label: "Projects Delivered" },
             { value: "100%", label: "Client Satisfaction" },
@@ -126,9 +126,11 @@ export default function Hero({ isDarkMode }) {
       </div>
 
       {/* Scroll indicator */}
+      <div className="hidden md:block">
       <div className={`absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 ${subTextClass}`}>
         <span className="text-xs tracking-widest uppercase">Scroll</span>
         <div className={`w-px h-10 bg-gradient-to-b ${isDarkMode ? "from-gray-600" : "from-slate-600"} to-transparent animate-pulse`} />
+      </div>
       </div>
     </section>
   );

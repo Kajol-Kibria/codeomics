@@ -95,27 +95,27 @@ export default function Footer({ isDarkMode }) {
               <ul className="space-y-3">
                 {title === "Services"
                   ? items.map((item) => (
-                      <li key={item}>
-                        <button
-                          className={`${linkTextClass} text-sm transition-colors duration-200 text-left cursor-pointer`}
-                          // Optional: You could link these to their respective sections if you want as well
-                          type="button"
-                        >
-                          {item}
-                        </button>
-                      </li>
-                    ))
+                    <li key={item}>
+                      <button
+                        className={`${linkTextClass} text-sm transition-colors duration-200 text-left cursor-pointer`}
+                        // Optional: You could link these to their respective sections if you want as well
+                        type="button"
+                      >
+                        {item}
+                      </button>
+                    </li>
+                  ))
                   : items.map((item) => (
-                      <li key={item.name}>
-                        <button
-                          className={`${linkTextClass} text-sm transition-colors duration-200 text-left cursor-pointer`}
-                          onClick={() => scrollTo(item.anchor)}
-                          type="button"
-                        >
-                          {item.name}
-                        </button>
-                      </li>
-                    ))}
+                    <li key={item.name}>
+                      <button
+                        className={`${linkTextClass} text-sm transition-colors duration-200 text-left cursor-pointer`}
+                        onClick={() => scrollTo(item.anchor)}
+                        type="button"
+                      >
+                        {item.name}
+                      </button>
+                    </li>
+                  ))}
               </ul>
             </div>
           ))}
@@ -126,11 +126,22 @@ export default function Footer({ isDarkMode }) {
           className={`pt-8 border-t ${bottomBorderClass} flex flex-col md:flex-row items-center justify-between gap-4`}
         >
           <p className={`${bottomTextClass} text-sm`}>
-            © {new Date().getFullYear()} Codeomics. All rights reserved. Built with ❤️ and code.
+            © {new Date().getFullYear()} Codeomics. All rights reserved. Built with ❤️ and code by&nbsp;
+            <span className="text-indigo-400 font-bold">
+              <a
+                href="https://www.facebook.com/kajol.kibria.77/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${linkTextClass} text-sm transition-colors duration-200`}
+                aria-label="Facebook"
+              >
+                kibria
+              </a>
+            </span>.
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61583811671378"
               target="_blank"
               rel="noopener noreferrer"
               className={`${linkTextClass} text-sm transition-colors duration-200`}
@@ -138,7 +149,6 @@ export default function Footer({ isDarkMode }) {
             >
               <span className="sr-only">Facebook</span>
               <i>
-                {/* Ensure you have installed react-icons and imported FaFacebook */}
                 <FaFacebook size={20} />
               </i>
             </a>
