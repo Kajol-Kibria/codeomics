@@ -2,6 +2,15 @@ import react, { useEffect, useState } from "react";
 
 const projects = [
   {
+    title: "Kibria Mart",
+    category: "E-Commerce",
+    desc: "A fast, full-featured ecommerce grocery platform with a responsive design.",
+    tech: ["React.js", "Tailwind CSS", "UI/UX", "Toast"],
+    tag: "E-Commerce",
+    link: "https://kibria-mart.vercel.app",
+    image: "/images/kibria-mart.png",
+  },
+  {
     title: "UniClub Kibria",
     category: "E-Commerce",
     desc: "A modern clothing ecommerce platform featuring fast performance and responsive design.",
